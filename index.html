@@ -4,53 +4,132 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
+
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">START BOOTSTRAP</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav ">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#">PORTFOLIO</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
+              <a class="nav-link" href="#">ABOUT</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
+              <a class="nav-link" href="#">CONTACT</a>
             </li>
           </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
         </div>
       </div>
     </nav>
 
+    <!-- section header -->
+    <section class="text-center bg-green-section" id="header">
+      <img src="assets/img/avatar.svg" alt="">
+      <h1 class="my-3">START BOOTSTRAP</h1>
+      <div class="hr-star d-flex align-items-center justify-content-center">
+        <div class="white-line mx-4"></div>
+        <i class="fa-solid fa-star"></i>
+        <div class="white-line mx-4"></div>
+      </div>
+      <ul class="my-4">
+        <a href="#">
+          <li>GRAPHIC ARTIST -</li>
+        </a>
+        <a href="#">
+          <li>WEB DESIGNER -</li>
+        </a>
+        <a href="#">
+          <li>ILLUSTRATOR</li>
+        </a>
+      </ul>
+    </section>
+
+    <!-- section portfolio -->
+    <section id="portfolio" class="py-4">
+      <div class="container">
+        <h2 class="text-center">PORTFOLIO</h2>
+        <div class="hr-star d-flex align-items-center justify-content-center">
+          <div class="dark-line mx-4"></div>
+          <i class="fa-solid fa-star"></i>
+          <div class="dark-line mx-4"></div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4 my-3">
+            <img src="assets/img/cabin.png" class="img-fluid rounded" alt="">
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 my-3">
+            <img src="assets/img/cake.png" class="img-fluid rounded" alt="">
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 my-3">
+            <img src="assets/img/circus.png" class="img-fluid rounded" alt="">
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 my-3">
+            <img src="assets/img/game.png" class="img-fluid rounded" alt="">
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 my-3">
+            <img src="assets/img/safe.png" class="img-fluid rounded" alt="">
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 my-3">
+            <img src="assets/img/submarine.png" class="img-fluid rounded" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section about -->
+    <section id="about" class="py-4 bg-green-section">
+      <div class="container-small">
+        <h2 class="text-center">ABOUT</h2>
+        <div class="hr-star d-flex align-items-center justify-content-center my-4">
+          <div class="white-line mx-4"></div>
+          <i class="fa-solid fa-star"></i>
+          <div class="white-line mx-4"></div>
+        </div>
+        <div class="row">
+          <div class="p-2 col-12 col-md-6 col-lg-6">
+            <p class="text-start">Freelancer is a free bootstrap theme created by Start Bootstrap.
+              The download includes the complete source files including
+              HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
+          </div>
+          <div class="p-2 col-12 col-md-6 col-lg-6">
+            <p class="text-start">Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+          </div>
+        </div>
+        <a href="#" class="btn btn-outline-light">
+          <i class="fa-solid fa-download"></i> Download
+        </a>
+      </div>  
+    </section>
+
+    <section id="contact-me" class="py-4">
+      <h2 class="text-center">CONTACT ME</h2>
+      <div class="hr-star d-flex align-items-center justify-content-center">
+        <div class="dark-line mx-4"></div>
+        <i class="fa-solid fa-star"></i>
+        <div class="dark-line mx-4"></div>
+      </div>
+      <div class="container">
+        <input type="text">
+        <label for="Name">Name</label>
+      </div>
+    </section>
 
 
 
 
 
-    
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
   </body>
 </html>
