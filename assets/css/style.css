@@ -89,31 +89,11 @@ textarea {
 #pre-footer a i{
     border: 1px solid;
     border-radius: 50%;
-}
-
-.padding-icon-1{
-    padding: 10px;
-}
-
-.padding-icon-2{
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 11px;
-    padding-right: 11px;
-}
-
-.padding-icon-3{
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 14px;
-    padding-right: 14px;
-}
-
-.padding-icon-4{
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 9px;
-    padding-right: 9px;
+    display: inline-block;
+    text-align: center;
+    line-height: 45px;
+    height: 45px;
+    aspect-ratio: 1;
 }
 
 .green-text{
